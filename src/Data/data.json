@@ -1,0 +1,172 @@
+{
+  "headings": [    
+    {
+      "id": "home",
+      "title": "Welcome to My Website",
+      "subtitle": "Discover More About Me"
+    },
+  
+    {
+      "id": "about",
+      "title": "About Me",
+      "subtitle": "Learn About My Journey"
+    },
+  
+    {
+      "id": "experiences",
+      "title": "Experiences",
+      "subtitle": "Where I gain my experiences"
+      },
+  
+    {
+      "id": "testimonials",
+      "title": "Testimonials",
+      "subtitle": "What People Say About Me"
+    },
+    {
+      "id": "gallery",
+      "title": "Gallery",
+      "subtitle": "Welcome to My Gallery"
+    },
+    {
+      "id": "contact",
+      "title": "Contact Me",
+      "subtitle": "Let's talk"
+    }
+  ],
+
+  "introduction": {
+    "short": "Hello, I am Xuan Hui Khiu, a 5th year dental student graduating in December 2023. And I am currently seeking for a graduate dentist position, and this portfolio will help you to know me better!",
+    "profile": "Passionate final-year dental student who will be graduating in December 2023 seeking a recent graduate dentist position that allows me to continue providing patients with a comfortable and great experience. I am excited to find opportunities to apply my special interest in improving patients' oral health and building up their confidence levels. I strongly value self-reflection, empathy towards patients, and quality care. I am looking for a workplace that can offer a nurturing environment, providing mentorship and support as I continue to maximize my skillset."
+  },
+
+  "experiences": [
+    {
+      "title": "Shadowing Experience",
+      "startDate": "Nov 2018",
+      "endDate": "Dec 2018",
+      "company": "Dr. Khoo’s Dental Clinic",
+      "address": "Johor, Malaysia",
+      "responsibilities": [
+        "Engaged in shadowing opportunity at Dr. Khoo's Dental Clinic in my hometown prior to enrolling in the School of Dentistry.",
+        "Gained firsthand exposure to a professional dental environment, observing various dental procedures and patient interactions.",
+        "Developing initial insights into the dental field, sparking my passion for dentistry and confirming my pursuit of a career in oral healthcare."
+      ]
+    },
+    {
+      "title": "Dental Assistant",
+      "startDate": "Feb 2021",
+      "endDate": "Apr 2022",
+      "company": "Linda Ang Dental Clinic",
+      "address": "Hamilton, Australia",
+      "responsibilities": [
+        "Assisted dentists in performing a range of treatments.",
+        "Collaborated with colleagues in a team-based environment to ensure optimal patient care and smooth clinic operations.",
+        "Enhanced patient communication skills through interactions and learning opportunities with experienced dentists, contributing to improved patient experiences and satisfaction.",
+        "Gained exposure to billing processes and clinic management aspects, expanding knowledge of administrative functions within a dental practice."
+      ]
+    },
+    {
+      "title": "Placement",
+      "startDate": "Jan 2023",
+      "endDate": "May 2023",
+      "company": "Toowoomba Oral Health Clinic",
+      "address": "Toowoomba, Australia",
+      "responsibilities": [
+        "Familiar with ISOH patient management software",
+        "Completed a range of simple and complex treatments in rural Queensland (2 hours inland from Brisbane)"
+      ]
+    },
+    {
+      "title": "Placement",
+      "startDate": "May 2023",
+      "endDate": "Present",
+      "company": "Ipswich Community Dental Clinic",
+      "address": "Ipswich, Australia",
+      "responsibilities": [
+        "Experience with ISOH patient management software",
+        "Completed treatment from simple to complex (RCT, surgical extractions, crowns, dentures, restorations, splints fabrication)"
+      ]
+    }
+  ],
+
+  "education" :[
+    {
+      "title": "Bachelor of Dental Science (Honours)",
+      "url": "https://study.uq.edu.au/study-options/programs/bachelor-dental-science-honours-2367",
+      "startDate": "Feb 2019",
+      "endDate": "Present",
+      "university": "University of Queensland",
+      "address": "Herston, Australia",
+      "responsibilities": [
+        "Proficient in a range of dental procedures from simple to complex including root canal treatment, extractions, crown placement, denture fitting, restoration and treatment of periodontal and pediatric cases.",
+        "Familiar with ISOH patient management software to improve patient record keeping and management efficiency.",
+        "Proficient in multiple languages ​​​​and able to communicate effectively with diverse patient populations.",
+        "Recipient of the 2020 Dean's Award for Academic Excellence, demonstrating a strong commitment to learning and achievement."
+      ]
+    }
+  ],
+
+  "languages" :[
+      {
+        "id": "English",
+        "rating": "5"
+      },
+      {
+        "id": "Chinese",
+        "rating": "5"
+      },
+      {
+        "id": "Cantonese",
+        "rating": "4"
+      },
+      {
+        "id": "Malay",
+        "rating": "4"
+      }
+  ],
+
+  "dental-skills": [
+    "Root Canal Treatment",
+    "Cosmetic : Crowns",
+    "Restorative",
+    "Paediatrics",
+    "Oral surgery",
+    "Prosthodontics: splints, dentures"
+  ],
+
+  "personality": [
+      "High responsible and reliable",
+      "Interpersonal communication",
+      "Highly motivated",
+      "Compassionate",
+      "Patient-centred",
+      "Highly dedicated to lifelong learning"
+  ],
+
+  "photos": [
+    {
+      "id": "Toowoomba",
+      "title": "Placement",
+      "intro": "These are the picture I have when I was in placement in Toowoomba Oral Health Clinic in Jan 2023, and I have meet a group of very friendly people there and I have a very great time!"
+    },
+    {
+      "id": "Endo",
+      "title": "Works",
+      "intro": "These are the Endos pic that I have done when I was in year 4, please scroll and see the results!"
+    },
+    {
+      "id": "Pros",
+      "title": "Works",
+      "intro": "These are the Pros pic that I have done when I was in year 4, please scroll and see the results!"
+    }
+  ],
+
+  "urls":{
+    "instagram": "https://www.instagram.com/",
+    "facebook": "https://www.facebook.com/",
+    "linkedin": "https://www.linkedin.com/",
+    "email": "jamyhui1998@hotmail.com"
+  }
+  
+}

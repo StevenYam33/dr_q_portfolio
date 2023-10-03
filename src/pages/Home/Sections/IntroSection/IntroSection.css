@@ -1,0 +1,44 @@
+#intro{
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem 0;
+    width: 90%;
+}
+
+.introContainer{
+    width: 65%;
+}
+
+.spanContainer{
+    margin-right: 0.5rem;
+    display: inline-flex;
+    overflow: hidden;
+}
+
+.introContainer h2{
+    display: inline-flex;
+    flex-wrap: wrap;
+    color: var(--mauve);
+}
+
+#intro a{
+    position: sticky;
+    top: 100px;
+}
+
+.button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-mauve);
+    color: var(--text);
+    transition: var(--transition);
+}
+
+.button:hover{
+    background: var(--mauve);
+    color: var(--background);
+}

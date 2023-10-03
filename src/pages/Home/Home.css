@@ -1,0 +1,26 @@
+#home .social-buttons{
+    position: fixed !important;
+    flex-direction: column;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#home .social-buttons a{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+#home .social-icon{
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 850px) {
+    #home .social-buttons{
+        display: none;
+        opacity: 0;
+    }
+}

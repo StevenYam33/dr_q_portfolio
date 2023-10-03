@@ -1,0 +1,43 @@
+#footer{
+    background-color: var(--pink);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactContainer{
+    width: 75%;
+    margin: 2rem auto 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactContainer .heading{
+    font-size: 3rem;
+    text-align: left;
+    color: var(--mauve);
+    padding-bottom: 100px;
+}
+
+.buttonContainer{
+    border-top: 2px solid var(--mauve-trans);
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#footer .buttonContainer a{
+    display: inline-block;
+    transform: translate(-10% ,-50%);
+}
+
+#footer .button{
+    width: 150px;
+    height: 150px;
+}
+
+@media screen and (max-width: 720px) {
+    .contactContainer{
+        width: 90%;
+    }    
+}

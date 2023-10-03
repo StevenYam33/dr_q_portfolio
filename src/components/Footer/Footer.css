@@ -1,0 +1,26 @@
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 1rem auto;
+    gap: 2rem;
+}
+
+.footerRight{
+    display: inline-flex;
+    text-align: left;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+footer h5{
+    color: var(--light-mauve);
+}
+
+@media screen and (max-width: 720px) {
+    .footerLeft{
+        margin: auto;
+    }    
+}

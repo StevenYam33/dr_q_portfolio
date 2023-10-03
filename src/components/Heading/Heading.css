@@ -1,0 +1,68 @@
+.section-heading {
+    align-self: center;
+    text-align: center;
+    color: var(--mauve);
+    position: relative;
+}
+
+#about .section-heading,
+#contact .section-heading,
+#testimonials .section-heading {
+    position: absolute;
+    top: 100px;
+    left: 7.5vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-heading .title {
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.section-heading .subtitle {
+    margin-bottom: 0.5rem;
+    color: var(--accent);
+}
+
+.section-heading::after {
+    position: absolute;
+    content: "";
+    inset: auto 0 0 0;
+    width: 25%;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    border-bottom: 2px solid var(--pink);
+}
+
+#testimonials .section-heading::after {
+    border-bottom: 2px solid var(--background);
+}
+
+
+@media only screen and (max-width: 650px) {
+    #about .section-heading,
+    #contact .section-heading,
+    #testimonials .section-heading {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translateX(0);
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-height: 750px) {
+    #about .section-heading,
+    #contact .section-heading,
+    #testimonials .section-heading {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translateX(0);
+        margin-top: 100px;
+    }
+}

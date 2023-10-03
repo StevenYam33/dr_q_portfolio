@@ -1,0 +1,99 @@
+.sticky-wrapper{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.ExpHeader{
+    position: sticky;
+    top: 100px;
+    margin-top: 100px;
+}
+
+.expCard{
+    width: 100%;
+    width: clamp(500px, 50%, 750px);
+    margin-inline: auto;
+    min-height: auto;
+    height: 500px;
+    background-color: var(--secondary);
+    box-shadow: var(--shadow-mauve);
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+    color: var(--red);
+    text-align: left;
+}
+
+.expAddress{
+    font-size: 1.2rem;
+}
+
+.expDate{
+    color: var(--mauve);
+}
+
+.expContent{
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.expTitle{
+    font-size: 1.75rem;
+    letter-spacing: 0.2rem;
+    color: var(--red);
+    position: relative;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.resp{
+    color: var(--light-mauve);
+    position: relative;
+    left: 1rem;
+    text-align: left;
+}
+
+.resp::before{
+    position: absolute;
+    content: "●";
+    left: -1rem;
+}
+
+@media only screen and (max-width: 650px) {
+    .expCard{
+        width: 85%;
+        padding: 0;
+    }
+
+    .expHeading{
+        font-size: 0.75rem;
+        margin: 10px 0 0 10px;
+    }
+
+    .expAddress{
+        font-size: 1rem;
+    }
+
+    .expContent{
+        line-height: 1;
+        hyphens: auto;
+    }
+
+    .resp{
+        left: 0.5rem;
+    }
+
+    .expTitle{
+        font-size: 1rem;
+        letter-spacing: 0;
+        margin: 0 10px 10px 0;
+    }
+}

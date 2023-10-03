@@ -1,0 +1,21 @@
+.pdf-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.pdf-container a{
+    width: 100%;
+}
+
+.pdf-page canvas{
+    width: 100% !important;
+    height: auto !important;
+    
+    transition: var(--transition);
+}
+
+.pdf-page canvas:hover{
+    transform: scale(1.01);
+}

@@ -1,0 +1,100 @@
+.experience-swiper{
+    width: clamp(500px, 50%, 750px);
+    height: auto;
+    overflow-x: visible;
+}
+
+.experience-card{
+    width: 100% !important;
+    height: 60vh;
+    height: auto;
+    background-color: var(--secondary);
+    color: var(--text);
+
+    display: flex;
+    flex-direction: column;
+
+    /* justify-content: center; */
+    align-items: center;
+    border-radius: 1rem;
+
+    position: relative;
+
+    padding: 1rem;
+
+    /* box-shadow: var(--shadow); */
+    box-shadow: var(--shadow-mauve);
+
+}
+
+.experience-card-heading{
+    align-self: flex-start;
+    text-align: left;
+}
+
+.experience-address{
+    font-size: 1.2rem;
+    color: var(--red);
+}
+
+.experience-date{
+    color: var(--mauve);
+}
+
+.responsibilities-cotainer{
+    width: 90%;
+    height: 100%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.responsibilities{
+    color: var(--light-mauve);
+    position: relative;
+    left: 1rem;
+    text-align: left;
+}
+
+.responsibilities::before{
+    position: absolute;
+    content: "●";
+    left: -1rem;
+}
+
+.experience-title{
+    font-size: 1.75rem;
+    letter-spacing: 0.2rem;
+    color: var(--red);
+    position: relative;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.experience-swiper .swiper-pagination{
+    /* bottom: -50px !important; */
+    margin-top: 20px;
+    position: unset !important;
+}
+
+.experience-swiper .swiper-pagination-bullet{
+    width: 30px;
+    height: 5px;
+    border-radius: 0.5rem;
+}
+
+.experience-swiper .swiper-pagination-bullet-active {
+    background: var(--red);
+}
+
+
+@media only screen and (max-width: 650px) {
+
+    .experience-swiper{
+        width: 85%;
+        padding: 3rem 1rem;
+    }
+
+}

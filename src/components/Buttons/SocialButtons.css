@@ -1,0 +1,12 @@
+.social-buttons{
+    display: flex;
+    gap: 1rem;
+    z-index: 50;
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.social-buttons .social-icon{
+    color: var(--mauve);
+}
