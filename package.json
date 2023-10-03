@@ -1,7 +1,7 @@
 {
   "name": "dr_q_portfolio",
   "version": "0.1.0",
-  "homepage": "https://github.com/StevenYam33/dr_q_portfolio.git",
+  "homepage": "https://StevenYam33.github.io/dr_q_portfolio",
   "private": true,
   "dependencies": {
     "@formspree/react": "^2.5.1",
