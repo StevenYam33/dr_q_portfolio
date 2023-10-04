@@ -7,7 +7,7 @@ import About from './pages/About/About';
 import Gallery from './pages/Gallery/Gallery';
 import Contact from './pages/Contact/Contact';
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { AnimatePresence } from "framer-motion";
 import { Modal } from './components/Modal/Modal';
 
