@@ -16,8 +16,8 @@ function Testimonials() {
         offset: ["start end", "end end"]
     });
 
-    const opacity = useTransform(scrollYProgress, [0.3, 1], [0, 1]);
-    const y = useTransform(scrollYProgress, [0, 0.75], [`100%`, `0%`]);
+    const opacity = useTransform(scrollYProgress, [0.3, 0.75], [0, 1]);
+    const y = useTransform(scrollYProgress, [0, 0.75], [`50%`, `0%`]);
 
     return(
         <section id={getHeading.id} 

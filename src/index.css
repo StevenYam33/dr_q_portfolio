@@ -21,6 +21,7 @@
 
 #root{
   width: 100vw;
+  width: 100svw;
 }
 
 * {
@@ -62,12 +63,10 @@ section {
   width: 100svw;
   min-height: 100vh;
   min-height: 100svh;
-
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
-
   justify-content: center;
   position: relative;
 }

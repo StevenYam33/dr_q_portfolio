@@ -52,8 +52,11 @@ export const AboutCard = () => {
 
   const isSmallScreen = window.innerWidth <= 650;
   const backIcon = isSmallScreen ? "iconoir:undo" : "iconoir:arrow-left";
+  
   const outsideInital = isSmallScreen ? { y: -300, opacity: 0 } :  { x: -300, opacity: 0 };
   const outsideAnimate = isSmallScreen ? { y: isContentOpen? 125 : 0, opacity: 1, transition:{duration: 0.5}} :  { x: 0, opacity: 1, transition:{duration: 0.5}};
+  
+  
   const insideInital = isSmallScreen ? { y: -300 , opacity: 0 } :  { x: -340 , opacity: 0 };
   const insideAnimate = isSmallScreen ? { y: 0, opacity: 1, transition:{delay: 0.25, duration: 0.2}} :  { x: 0, opacity: 1, transition:{delay: 0.25, duration: 0.2} };
   const insideExit = isSmallScreen ?   {y: -300, opacity: 0, transition:{duration: 0.2}} :   {x: -340, opacity: 0, transition:{duration: 0.2}};

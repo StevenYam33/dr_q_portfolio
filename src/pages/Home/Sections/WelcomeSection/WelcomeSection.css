@@ -6,7 +6,7 @@
 }
 
 .welcomePicContainer{
-    width: clamp(200px, 50vw, 400px);
+    height: clamp(200px, 45vh, 400px);
     aspect-ratio: 4 / 5 ;
     background-color: var(--light-mauve);
     box-shadow: var(--shadow-mauve);
