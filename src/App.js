@@ -7,7 +7,7 @@ import About from './pages/About/About';
 import Gallery from './pages/Gallery/Gallery';
 import Contact from './pages/Contact/Contact';
 
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { AnimatePresence } from "framer-motion";
 import { Modal } from './components/Modal/Modal';
 
@@ -34,7 +34,7 @@ function App() {
   }, [isModalOpen]);
 
   return (
-    <Router>
+    <>
       <Navigation openModal={(component) => openModal(component)} />
       <AnimatePresence mode="wait">
         <Routes>
@@ -51,7 +51,7 @@ function App() {
       >
         {modalContent}
       </Modal>
-    </Router>
+    </>
   );
 }
 
