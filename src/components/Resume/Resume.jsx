@@ -31,6 +31,7 @@ export const Resume = () => {
                     pageNumber={1}
                     renderTextLayer={false}
                     renderAnnotationLayer={false} 
+                    devicePixelRatio={Math.min(2, window.devicePixelRatio)}
                     className="pdf-page"
                 />
             </a>
