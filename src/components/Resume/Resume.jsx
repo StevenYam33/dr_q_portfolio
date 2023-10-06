@@ -32,6 +32,7 @@ export const Resume = () => {
                     renderTextLayer={false}
                     renderAnnotationLayer={false} 
                     className="pdf-page"
+                    renderMode='svg'
                 />
             </a>
 
