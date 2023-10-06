@@ -3,10 +3,13 @@
     width: 100vw;
     width: 100svw;
     background-color: transparent;
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
     position: fixed;
     z-index: 9999;
+}
+
+.nav-overlay{
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
 }
 
 .nav-container{
@@ -134,8 +137,6 @@
         min-height: 100%;
         height: 100vh;
         background: rgba(0, 0, 0, 0.5);
-        -webkit-backdrop-filter: blur(20px);
-        backdrop-filter: blur(20px);
         overflow: auto;
 
         transition: var(--transition);
