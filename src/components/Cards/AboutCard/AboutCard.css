@@ -31,15 +31,12 @@
     bottom: -2rem;
     right: -5rem;
     font-size: 1.25rem;
-}
-
-.card-container.closed .card-outside.no-interact{
     animation: scale 2000ms ease-in-out infinite;
 }
 
 @keyframes scale {
     50%{
-        transform: scale(0.975);
+        transform: scale(0.8);
     }
 }
 
@@ -128,6 +125,20 @@
     color: var(--red);
     position: relative;
     left: -5px;
+
+    &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: (3 / 3.25) * 100%;
+      }
+      > .inner {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
 }
 
 .inside-heading{
