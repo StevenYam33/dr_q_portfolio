@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f083d992.css",
-    "main.js": "/static/js/main.5d9a1a7e.js",
+    "main.css": "/static/css/main.2506c194.css",
+    "main.js": "/static/js/main.c51ef56d.js",
     "static/media/Toowoomba_4.jpeg": "/static/media/Toowoomba_4.e435e6912f1ea708d5ba.jpeg",
     "static/media/Toowoomba_cover.jpeg": "/static/media/Toowoomba_cover.dfdc3a19aafed6ea9a55.jpeg",
     "static/media/Toowoomba_10.jpeg": "/static/media/Toowoomba_10.140d5c7e78fb430d5dd9.jpeg",
@@ -27,11 +27,11 @@
     "static/media/Case_3(B).jpeg": "/static/media/Case_3(B).77f56e85f3ae3d1df017.jpeg",
     "static/media/Case_2(B).jpeg": "/static/media/Case_2(B).56b9630c0074b557df20.jpeg",
     "index.html": "/index.html",
-    "main.f083d992.css.map": "/static/css/main.f083d992.css.map",
-    "main.5d9a1a7e.js.map": "/static/js/main.5d9a1a7e.js.map"
+    "main.2506c194.css.map": "/static/css/main.2506c194.css.map",
+    "main.c51ef56d.js.map": "/static/js/main.c51ef56d.js.map"
   },
   "entrypoints": [
-    "static/css/main.f083d992.css",
-    "static/js/main.5d9a1a7e.js"
+    "static/css/main.2506c194.css",
+    "static/js/main.c51ef56d.js"
   ]
 }
