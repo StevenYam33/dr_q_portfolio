@@ -41,6 +41,15 @@
     border-bottom: 2px solid var(--background);
 }
 
+@media only screen and (max-width: 850px) {
+    #gallery .section-heading{
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translateX(0);
+        margin: calc(var(--nav-height) + 30px) auto 30px;
+    }
+}
 
 @media only screen and (max-width: 650px) {
     #about .section-heading,
@@ -56,6 +65,7 @@
 
 @media only screen and (max-height: 750px) {
     #about .section-heading,
+    #gallery .section-heading,
     #contact .section-heading,
     #testimonials .section-heading {
         position: relative;

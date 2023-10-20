@@ -3,12 +3,14 @@ import "./ScrollGallery.css"
 import data from '../../../Data/data.json'
 import Heading from '../../Heading/Heading';
 import { ThumbsGallery } from '../ThumbsGallery/ThumbsGallery';
+import ScrollSlide from './ScollSlide'
 
+import { Icon } from '@iconify/react';
 import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/navigation';
-import { Mousewheel, Scrollbar } from 'swiper/modules';
+// import 'swiper/css/navigation';
+import { Keyboard, Mousewheel,Navigation } from 'swiper/modules';
 
 // import images and urls
 import ToowoombaCover from "../../../Assets/Images/Placements/Toowoomba/Toowoomba_cover.jpeg"
@@ -37,71 +39,70 @@ export const ScrollGallery = ({ openModal }) => {
         >
             <Heading title={getHeading.title} subtitle={getHeading.subtitle} />
         </motion.div>
-        <Swiper
-            spaceBetween={30}
-            slidesPerView={1.5}
-            mousewheel={true}
-            scrollbar={{
-                draggable: true,
-            }}
-            modules={[ Mousewheel, Scrollbar ]}
-            className="scrollSwiper"
-        >
-            <SwiperSlide>
-                <motion.div
-                    initial={{ y: -200, opacity: 0 }}
-                    animate={{ y: 0 , opacity: 1 }}
-                    transition={{ duration: 1, delay: 0.5 }}
-                    className='scrollSlide'
-                >
-                    <img src={ToowoombaCover} alt="Toomwoomba" />
-                    <div className="description-container" onClick={() => openModal(<ThumbsGallery imageUrls={toowoombaImagesUrls} />)}>
-                        <div className="desc-heading">
-                            <div className="title">{getToowoomba.title}</div>
-                            <div className="id">{getToowoomba.id}</div>
-                        </div>
-                        <div className="intro">{getToowoomba.intro}</div>
-                    </div>
-                </motion.div>
-            </SwiperSlide>
 
-            <SwiperSlide>
-                <motion.div
-                    initial={{ y: 200, opacity: 0 }}
-                    animate={{ y: 0 , opacity: 1 }}
-                    transition={{ duration: 1, delay: 1}}
-                    className='scrollSlide'
-                >
-                    <img src={EndoCover} alt="Endo" />
-                    <div className="description-container" onClick={() => openModal(<ThumbsGallery imageUrls={endoImagesUrls} />)}>
-                        <div className="desc-heading">
-                            <div className="title">{getEndo.title}</div>
-                            <div className="id">{getEndo.id}</div>
-                        </div>
-                        <div className="intro">{getEndo.intro}</div>
-                    </div>
-                </motion.div>
-            </SwiperSlide> 
+        <div className="scrollSwiper-content">
+            <div className="swiper-button">
+                <div className="image-swiper-button-prev">
+                    <Icon icon="iconoir:arrow-left" width="40" height="40" />
+                </div>
+                <div className="image-swiper-button-next">
+                    <Icon icon="iconoir:arrow-right" width="40" height="40" />
+                </div>
+            </div>
 
-            <SwiperSlide>
-                <motion.div
-                    initial={{ y: -200, opacity: 0 }}
-                    animate={{ y: 0 , opacity: 1 }}
-                    transition={{ duration: 1, delay: 1.5 }}
-                    className='scrollSlide'
-                >
-                    <img src={ProsCover} alt="Pros" />
-                    <div className="description-container" onClick={() => openModal(<ThumbsGallery imageUrls={prosImagesUrls} />)}>
-                        <div className="desc-heading">
-                            <div className="title">{getPros.title}</div>
-                            <div className="id">{getPros.id}</div>
-                        </div>
-                        <div className="intro">{getPros.intro}</div>
-                    </div>
-                </motion.div>
-
-            </SwiperSlide>
-        </Swiper>
+            <Swiper
+                spaceBetween={30}
+                slidesPerView={1}
+                mousewheel={true}
+                keyboard={{
+                    enabled: true,
+                }}
+                navigation={{
+                    nextEl: ".image-swiper-button-next",
+                    prevEl: ".image-swiper-button-prev",
+                    disabledClass: "swiper-button-disabled",
+                }}
+                breakpoints={{
+                    650: { slidesPerView: 1.5},
+                }}
+                modules={[ Keyboard, Mousewheel, Navigation ]}
+                className="scrollSwiper"
+            >
+                <SwiperSlide>
+                    <ScrollSlide
+                        initial= {-200}
+                        delay= {0}
+                        imageSrc={ToowoombaCover}
+                        title={getToowoomba.title}
+                        id={getToowoomba.id}
+                        intro={getToowoomba.intro}
+                        onClick={() => openModal(<ThumbsGallery imageUrls={toowoombaImagesUrls} />)}
+                    />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <ScrollSlide
+                        initial= {200}
+                        delay= {0.25}
+                        imageSrc={EndoCover}
+                        title={getEndo.title}
+                        id={getEndo.id}
+                        intro={getEndo.intro}
+                        onClick={() => openModal(<ThumbsGallery imageUrls={endoImagesUrls} />)}
+                    />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <ScrollSlide
+                        initial= {-200}
+                        delay= {0.5}
+                        imageSrc={ProsCover}
+                        title={getPros.title}
+                        id={getPros.id}
+                        intro={getPros.intro}
+                        onClick={() => openModal(<ThumbsGallery imageUrls={prosImagesUrls} />)}
+                    />
+                </SwiperSlide>
+            </Swiper>
+        </div>
     </div>
     )
 }

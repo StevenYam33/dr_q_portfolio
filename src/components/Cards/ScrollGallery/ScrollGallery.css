@@ -3,15 +3,13 @@
     width: 100%;
     height: 100%;
     gap: 1rem;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     color: var(--red);
 }
 
 /* Intro */
 .scrollSwiper-intro {
-    align-items: start;
-    text-align: left;
     margin-left: 5vw;
 }
 
@@ -25,89 +23,81 @@
 }
 
 /* Main */
-.scrollSwiper {
-    width: clamp(300px, 65vw, 1200px);
+.scrollSwiper-content{
+    width: clamp(300px, 65%, 1200px);
+    width: 65%;
     height: 100%;
-    margin-right: 0 !important;
+    max-height: calc(100vh - var(--nav-height) * 2);
+    position: relative;
 }
 
-.scrollSlide{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.scrollSwiper .swiper-slide img {
+.gallery-slide img {
     max-width: 100%;
     max-height: 100%;
     height: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
     object-position: 0 30%;
+    cursor: pointer;
 }
 
 /* descriptions */
-.description-container{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: var(--secondary);
-    transition: var(--transition);
-}
+.description{
+    width: 90%;
+    margin: 1rem auto;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
 
-.description-container:hover{
-    background: rgba(0, 0, 0, 0.5);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-}
-
-.description-container .intro{
-    display: none;
-    margin: 1rem;
-}
-
-.description-container .intro::after{
-    position: absolute;
-    content: "+";
-    font-size: 2rem;
-    bottom: 1rem;
-    right: 1.5rem;
-}
-
-.description-container:hover .intro{
-    display: block;
-}
-
-.desc-heading{
-    position: absolute;
-    bottom: 1rem;
-    left: 1.5rem;
     text-align: left;
+}
+
+
+.description .heading{
+    font-weight: 800;
     letter-spacing: 2px;
 }
 
-.desc-heading .id{
+.description .heading .id{
     font-size: 2rem;
 }
 
-/* Scroll bar */
-.scrollSwiper .swiper-scrollbar {
-    margin-top: 3rem;
-    height: 0.75rem;
-    border-radius: 5rem;
-    background: var(--mauve-trans);
-    
+.description .intro{
+    padding: 1rem 0;
 }
 
-.scrollSwiper .swiper-scrollbar-drag {
+.description .open{
+    font-size: 1.25rem;
+    text-align: end;
+    border-bottom: 1px var(--red) solid;
     cursor: pointer;
-    border-radius: 5rem;
-    height: 100%;
-    background: var(--red);
+}
+
+/* Navigation */
+.swiper-button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 1rem;
+    z-index: 100;
+}
+
+.image-swiper-button-prev,
+.image-swiper-button-next {
+    color: var(--red);
+    background-color: var(--pink);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-disabled {
+    opacity: 0.5;
+    pointer-events: unset;
 }
 
 @media only screen and (max-width: 850px) {
@@ -115,7 +105,28 @@
         flex-direction: column;
     }
 
-    .scrollSwiper-intro, .scrollSwiper {
+    .scrollSwiper-intro {
+        margin: 0;
+    }
+
+    .scrollSwiper-intro .section-heading::after{  
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .scrollSwiper-content{
         width: 100%;
+    }
+    
+    /* .scroll */
+}
+
+@media only screen and (max-width: 650px) {
+    .scrollSwiper-content{
+        padding: 0 1rem;
+    }
+
+    .swiper-button{
+        right: calc(1rem + 10px);
     }
 }
