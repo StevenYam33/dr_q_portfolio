@@ -1,4 +1,5 @@
 #testimonials{
     overflow: hidden;
     background-color: var(--pink);
+    justify-content: unset;
 }  

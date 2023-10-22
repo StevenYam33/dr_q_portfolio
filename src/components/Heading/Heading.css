@@ -5,9 +5,12 @@
     position: relative;
 }
 
+#testimonials .section-heading{
+    margin: 100px auto 0px;
+} 
+
 #about .section-heading,
-#contact .section-heading,
-#testimonials .section-heading {
+#contact .section-heading{
     position: absolute;
     top: calc(var(--nav-height) + 20px);
     left: 50%;
@@ -43,8 +46,7 @@
 
 @media only screen and (max-width: 650px) {
     #about .section-heading,
-    #contact .section-heading,
-    #testimonials .section-heading {
+    #contact .section-heading{
         position: relative;
         top: 0;
         left: 0;

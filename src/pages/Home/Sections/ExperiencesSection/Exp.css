@@ -97,3 +97,27 @@
         margin: 0 10px 10px 0;
     }
 }
+
+@media only screen and (max-height: 650px) {
+    .expCard{
+        height: 300px;
+        gap: 0;
+    }
+
+    .expContent{
+        padding: 0 1rem;
+        hyphens: auto;
+        gap: 0.5rem;
+    }
+
+    .expContent{
+        overflow-y: scroll;
+    }
+}
+
+@media only screen and (max-height: 450px) {
+    .expCard{
+        height: 250px;
+        gap: 0;
+    }
+}
