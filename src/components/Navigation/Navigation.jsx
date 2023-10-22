@@ -98,11 +98,11 @@ function Navigation({openModal}) {
         };
 
         if (window.innerWidth <= 850 && showMenu) {
-            document.documentElement.style.overflowY = "hidden";
+            // document.documentElement.style.overflowY = "hidden";
             document.body.style.overflowY = "hidden";
             NavOverlay.addEventListener('clic k', handleClickOutside);
         } else {
-            document.documentElement.style.overflowY = "auto";
+            // document.documentElement.style.overflowY = "auto";
             document.body.style.overflowY = 'auto'; 
             NavOverlay.removeEventListener('click', handleClickOutside);
         }
