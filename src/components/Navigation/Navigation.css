@@ -1,7 +1,6 @@
 /* Navigation */
 #navigation{
     width: 100vw;
-    width: 100dvw;
     background-color: transparent;
     position: fixed;
     z-index: 9999;
@@ -94,14 +93,10 @@
 .nav-ham{
     opacity: 0;
     display: none;
-
     width: 50px;
     height: 50px;
-
     position: relative;
-
     cursor: pointer;
-
     z-index: 9999;
 }
 
@@ -112,9 +107,7 @@
     content: "";
     width: 28px;
     height: 3px;
-
     border-radius: 5px;
-
     background-color: var(--text);
 }
 
@@ -138,9 +131,7 @@
         height: 100vh;
         background: rgba(0, 0, 0, 0.5);
         overflow: auto;
-
         transition: var(--transition);
-
         z-index: 99999;
     }
 
@@ -157,14 +148,10 @@
         height: 100vh;
         height: 100dvh;
         background: var(--secondary);
-
-        /* transform: translateX(100%);  */
-        /* transition: var(--transition); */
     }
     
     .nav-list.active{
         box-shadow:  -2.5rem 0 2rem -2rem hsl(200 50% 20% / 40%);
-        /* transform: translateX(0%); */
     }
 
     .nav-ham{

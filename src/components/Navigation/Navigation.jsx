@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./Navigation.css";
 
-// import { ReactComponent as Logo } from '../../Assets/Images/Icons/logo.svg';
 import { Logo } from "../../Assets/Images/Logo/Logo";
 import { motion} from "framer-motion";
 
@@ -69,9 +68,7 @@ function Navigation({openModal}) {
                 y: { stiffness: 1000 }
             }
         }
-      }
-
-
+    }
 
     useEffect(() => {
         const NavOverlay = document.querySelector('.nav-overlay');
@@ -101,9 +98,11 @@ function Navigation({openModal}) {
         };
 
         if (window.innerWidth <= 850 && showMenu) {
+            document.documentElement.style.overflow = "hidden";
             document.body.style.overflow = "hidden";
-            NavOverlay.addEventListener('click', handleClickOutside);
+            NavOverlay.addEventListener('clic k', handleClickOutside);
         } else {
+            document.documentElement.style.overflow = "auto";
             document.body.style.overflow = 'auto'; 
             NavOverlay.removeEventListener('click', handleClickOutside);
         }
