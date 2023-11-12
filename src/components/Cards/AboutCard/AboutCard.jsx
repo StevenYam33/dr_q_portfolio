@@ -97,7 +97,8 @@ export const AboutCard = () => {
             >
             <Icon 
               className='about-icon icon'
-              icon="ph:tooth" onClick={ () => {
+              icon="ph:tooth" 
+              onClick={ () => {
                 openBlock(() => <DentalSkillsBlock />);
                 setSelectedHeader('Dental Skills');
               }}
