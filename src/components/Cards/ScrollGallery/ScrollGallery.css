@@ -86,11 +86,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .swiper-button-disabled {
     opacity: 0.5;
     pointer-events: unset;
+    cursor: unset;
 }
 
 @media only screen and (max-width: 850px) {

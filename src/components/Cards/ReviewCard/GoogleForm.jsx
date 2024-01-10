@@ -14,7 +14,7 @@ function GoogleForm() {
         const fetchData = async ()=> {
             const apiKey = "AIzaSyCW1IunBPEy_HL7nmtW-1LA_NSPSPQEUYg";
             const sheetId = "1aK0WAlG1YmKFsISJkUygo5HcdbaVKbIJPvxSNF89gsA";
-            const range = "Form responses 1";
+            const range = "Form responses 2";
             const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${range}?key=${apiKey}`;
         
             try {
